@@ -40,11 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.flyhyer.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home/landings pagina
+  Home/landings pagina:
+
   <img src="readme-images/ss1.png" width="375px" alt="Home">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  About us  
+  About us:
+
   <img src="readme-images/ss2.png" width="375px" alt="About">
  
 </details>
@@ -69,7 +71,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_home.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
