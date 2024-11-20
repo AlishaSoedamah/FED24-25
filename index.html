@@ -21,6 +21,7 @@
 	</header>
 	<main>
 		<section>
+			<img id="logo-big" src="images/logo-var.svg" alt="Hyer">
 			<h1>Personalised Aviation</h1>
 			<p>More flexibility, freedom and choice!</p>
 			<button>Book an Aircraft</button>
@@ -32,16 +33,26 @@
 				a personal approach is key to ensure you get the most out of your 
 				flying experience.
 			</h2>
-			<h3>Flexible Solutions</h3>
-			<p>Stop depending on airlines. Fly on your own terms or join our exclusive shared flights.</p>
-			<h3>Smart Quotes</h3>
-			<p>Know what you are paying for. No hidden fees. No overpromises. Flights suitable for your needs.</p>
-			<h3>Fully Customizable</h3>
-			<p>Control all aspects of your journey. Easily upgrade services with our add-ons.</p>
-			<h3>Personalization</h3>
-			<p>Receive full support of our Flight Management service. We have you covered, anywhere.</p>
+			<article>
+				<article>
+					<h3>Flexible Solutions</h3>
+					<p>Stop depending on airlines. Fly on your own terms or join our exclusive shared flights.</p>
+				</article>
+				<article>
+					<h3>Smart Quotes</h3>
+					<p>Know what you are paying for. No hidden fees. No overpromises. Flights suitable for your needs.</p>
+				</article>
+				<article>
+					<h3>Fully Customizable</h3>
+					<p>Control all aspects of your journey. Easily upgrade services with our add-ons.</p>
+				</article>
+				<article>
+					<h3>Personalization</h3>
+					<p>Receive full support of our Flight Management service. We have you covered, anywhere.</p>
+				</article>
+			</article>
 		</section>
-		<div>
+		<div class="col-to-row">
 			<section>
 				<h2>Flexible Services</h2>
 				<p>Smart solutions for all your charter requirements</p>
@@ -50,7 +61,6 @@
 			<section>
 				<h2>On-Demand</h2>
 				<p>Book your aircraft. Customize all aspects of your journey.</p>
-				<!-- <img src="images/aircraft.avif" alt="Aircraft"> -->
 			</section>
 			<section>
 				<h2>Shared Flights</h2>
@@ -59,14 +69,29 @@
 		</div>
 		<section>
 			<h2>Popular Destinations</h2>
-			<h4>Barcelona<span>(GRO)</span></h4>
-			<p>Spain</p>
-			<h4>Ibiza<span>(IBZ)</span></h4>
-			<p>Spain</p>
-			<h4>Cannes<span>(CEQ)</span></h4>
-			<p>France</p>
-			<h4>Paris<span>(LBG)</span></h4>
-			<p>France</p>
+			<section>
+				<figure>
+					<img class="rounded-corner" src="images/pop-dest.avif" alt="Cannes">
+				</figure>
+				<article>
+					<div>
+						<h4>Barcelona<span> (GRO)</span></h4>
+						<p>Spain</p>
+					</div>
+					<div>
+						<h4>Ibiza<span> (IBZ)</span></h4>
+						<p>Spain</p>
+					</div>
+					<div>
+						<h4>Cannes<span> (CEQ)</span></h4>
+						<p>France</p>
+					</div>
+					<div>
+						<h4>Paris<span> (LBG)</span></h4>
+						<p>France</p>
+					</div>
+				</article>
+			</section>
 		</section>
 		<section>
 			<img src="images/flight-manager.avif" alt="">
@@ -93,12 +118,18 @@
 					with our exclusive <strong>shared flight.</strong>
 					We upgrade the way you fly.
 				</p>
+				<div class="ex-icon">
+					<img src="images/reward.svg" alt="">
+				</div>
 				<h3>Rewarding Membership</h3>
 				<p>
 					Our membership blends the advantage of a jet card with the 
 					easiness of a loyalty program. Get access to services not 
 					available anywhere without hefty fees.
 				</p>
+				<div class="ex-icon">
+					<img src="images/ownership.svg" alt="">
+				</div>
 				<h3>Aircraft ownership</h3>
 				<p>
 					Our team is ready to assist in discovering if ownership 
@@ -106,6 +137,9 @@
 					with a shared ownership construction together with like-minded 
 					clients. 
 			</p>
+			<div class="ex-icon">
+				<img src="images/leaf.svg" alt="">
+			</div>
 			<h3>CO2 Neutral Flights</h3>
 			<p>
 				We play our part to ensure a more sustainable future. Via Hyer®
@@ -120,12 +154,48 @@
 		</section>
 	</main>
 	<footer>
+		<img src="images/logo.svg" alt="logo">
 		<h2>Follow us</h2>
+		<div>
+			<img src="images/insta.svg" alt="Instagram">
+		</div>
+		<div>
+			<img src="images/facebook.svg" alt="Facebook">
+		</div>
+		<div>
+			<img src="images/in.svg" alt="Linkedin">
+		</div>
 		<h2>On-demand</h2>
-		<h2>Memberships</h2>
+		<a href="#">Private Charter</a>
 		<h2>Shared Flights</h2>
+		<a href="#">Available flights</a>
+		<a href="#">Propose a Flight</a>
+		<h2>Memberships</h2>
+		<a href="#">Elevate</a>
 		<h2>Company</h2>
+		<a href="#">About us</a>
+		<a href="#">Solutions</a>
+		<a href="#">News</a>
+		<a href="#">Contact</a>
 		<h2>My Account</h2>
+		<a href="#">Register</a>
+		<a href="#">Login</a>
+		<a href="#">Dashboard</a>
+		<p>© Hyer Aviation</p>
+		<a href="#">Cookie policy</a>
+		<a href="#">Terms & Conditions</a>
+		<a href="#">Privacy Policy</a>
+		<p>Hyer® HQ - Eindhoven, The Netherlands</p>
+		<p>Registered on the Dutch Chamber of Commerce: 80195520</p>
+		<p>
+			Hyer® is a charter broker with a global digital platform and is not a 
+			direct air carrier. All flights advertised to which Hyer® has access 
+			are owned and operated by a properly licensed third party air carrier, 
+			compliant with rules outlined by the European Union Aviation Safety 
+			Agency (or other appropriate authority under foreign law). Hyer® does not 
+			carry additional liability insurance. Passengers are covered by the aircraft 
+			operator insurance.
+		</p>
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>

@@ -57,6 +57,14 @@ h4 {
 	font-size: 20px;
 }
 
+h4 > span {
+	font-family: "Helvetica-reg";
+}
+
+p {
+	font-size: 18px;
+}
+
 img {
 	width: 100%;
 	height: auto;
@@ -72,23 +80,25 @@ button {
 	padding: 10px 15px;
 	cursor: pointer;
 }
-section:nth-child(1) > p {
-	font-size: 22px;
+
+section:nth-child(2) > section > article > h2 {
+	padding-bottom: 5rem;
 }
 
-section:nth-child(2) > p {
+section:nth-child(2) > article > article > p {
 	line-height: 110%;
-	padding: 0;
 	color: var(--text-secondary);
+	margin-bottom: 30px;
 }
 
-section:nth-child(2) > h3{
+section:nth-child(2) > article > article > h3 {
 	padding-top: 15px;
 	border-top: 1px solid var(--text-secondary);
 }
 
 div > section {
 	color: var(--accent-color-2);
+	height: 250px;
 }
 
 div > section:nth-child(1) {
@@ -99,8 +109,31 @@ div > section:nth-child(2) > p {
 	color: var(--accent-color-2);
 }
 
+div > section:nth-child(2) {
+    background-image: url("../images/aircraft.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div > section:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+}
+
 div > section:nth-child(3) {
 	background-color: var(--brick-red);
+	background-image: url("../images/shared-flights.svg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section:nth-child(1) > button {
@@ -109,7 +142,19 @@ section:nth-child(1) > button {
 	color: var(--accent-color-2);
 }
 
-section:nth-child(4) > p {
+section:nth-child(4) > section > article {
+	display: grid;
+	grid-template-columns: 180px 180px;
+	justify-content: center;
+	column-gap: 15px;
+	row-gap: 20px;
+}
+
+section:nth-child(4) > section > article > div {
+	border-top: 1px solid var(--text-secondary);
+}
+
+section:nth-child(4) > section > article > div > p {
 	padding: 10px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
@@ -120,6 +165,130 @@ section:nth-child(5) {
 	color: var(--accent-color-2);
 }
 
-section > article > h2 {
-	font-size: 65px;
+section:nth-child(5) > img {
+	display: flex;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+footer {
+	background-color: var(--accent-color);
+	color: var(--accent-color-2);
+	padding: 35px 17px;
+}
+
+footer > p:nth-last-child(-n + 3) {
+	color: var(--text-secondary);
+	font-size: 14px;
+}
+
+footer > h2 {
+	font-size: 22px;
+}
+
+footer > a {
+	color: var(--text-secondary);
+	text-decoration: none;
+}
+
+footer > img {
+	width: 120px;
+	height: auto;
+}
+
+footer > div > img {
+	width: 25px;
+	height: auto;
+	margin: 0 auto;
+}
+
+footer > div {
+	display: flex;
+	background-color: var(--accent-color-2);
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+}
+
+.ex-icon {
+	display: flex;
+	width: 75px;
+	height: 75px;
+	outline: 1px dashed var(--accent-color);
+	border-bottom-right-radius: 25px;
+	margin: 25px 0 15px 0;
+}
+
+.ex-icon > img {
+	margin: 0 auto;
+	width: 35px;
+	height: auto;
+}
+
+.col-to-row {
+	display: inline;
+}
+
+.rounded-corner {
+	display: none;
+}
+
+#logo-big {
+	display: none;
+}
+
+@media only screen and (min-width: 480px)
+{
+	section:nth-child(4) > section > article {
+		grid-template-columns: 220px 220px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	#logo-big {
+		display: inline;
+		width: 675px;
+		height: auto;
+	}
+	
+	.col-to-row {
+		display: flex;
+	}
+
+	div > section {
+		height: 100vh;
+	}
+
+	.rounded-corner {
+		max-width: 35em;
+		height: auto;
+		display: inline;
+		border-bottom-right-radius: 25px;
+	}
+
+	section:nth-child(2) > h2 {
+		font-size: 50px;
+		width: 650px;
+	}
+
+	section:nth-child(2) > article {
+		width: 400px;
+	}
+	
+	section:nth-child(2) > article {
+		display: grid;
+		grid-template-columns: 300px 300px;
+		column-gap: 15px;
+		row-gap: 20px;
+	}
+
+	section:nth-child(4) > section > article {
+		justify-content: right;
+	}
+	
+	section:nth-child(4) > section {
+		display: flex;
+		align-items: center;
+	}
 }
