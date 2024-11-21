@@ -84,14 +84,18 @@ button {
 section:nth-child(2) > section > article > h2 {
 	padding-bottom: 5rem;
 }
+section:nth-child(2) > ul {
+	list-style: none;
+	padding: 0;
+}
 
-section:nth-child(2) > article > article > p {
+section:nth-child(2) > ul > li > p {
 	line-height: 110%;
 	color: var(--text-secondary);
 	margin-bottom: 30px;
 }
 
-section:nth-child(2) > article > article > h3 {
+section:nth-child(2) > ul > li > h3 {
 	padding-top: 15px;
 	border-top: 1px solid var(--text-secondary);
 }
@@ -142,7 +146,7 @@ section:nth-child(1) > button {
 	color: var(--accent-color-2);
 }
 
-section:nth-child(4) > section > article {
+section:nth-child(4) > section > ul {
 	display: grid;
 	grid-template-columns: 180px 180px;
 	justify-content: center;
@@ -150,11 +154,11 @@ section:nth-child(4) > section > article {
 	row-gap: 20px;
 }
 
-section:nth-child(4) > section > article > div {
+section:nth-child(4) > section > ul > li {
 	border-top: 1px solid var(--text-secondary);
 }
 
-section:nth-child(4) > section > article > div > p {
+section:nth-child(4) > section > ul > li > p {
 	padding: 10px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
@@ -272,11 +276,11 @@ footer > div {
 		width: 650px;
 	}
 
-	section:nth-child(2) > article {
+	section:nth-child(2) > ul {
 		width: 400px;
 	}
 	
-	section:nth-child(2) > article {
+	section:nth-child(2) > ul {
 		display: grid;
 		grid-template-columns: 300px 300px;
 		column-gap: 15px;
@@ -291,4 +295,8 @@ footer > div {
 		display: flex;
 		align-items: center;
 	}
+
+	div > section:nth-child(2) {
+		width: 33%;
+	}	
 }
