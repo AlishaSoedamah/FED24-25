@@ -148,7 +148,7 @@ section:nth-child(1) > button {
 
 section:nth-child(4) > section > ul {
 	display: grid;
-	grid-template-columns: 180px 180px;
+	grid-template-columns: 160px 160px;
 	justify-content: center;
 	column-gap: 15px;
 	row-gap: 20px;
@@ -182,40 +182,70 @@ footer {
 	padding: 35px 17px;
 }
 
+footer > ul {
+	padding: 0;
+}
+
+footer > section {
+	display: grid;
+	grid-template-columns: 170px 170px;
+	padding: 0;
+	margin-bottom: 60px;
+}
+
 footer > p:nth-last-child(-n + 3) {
 	color: var(--text-secondary);
 	font-size: 14px;
 }
 
-footer > h2 {
+footer >  ul > li {
+	list-style: none;
+}
+
+footer > ul > li > img {
+	width: 110px;
+	height: auto;
+}
+
+footer > ul:nth-child(1) > ul {
+	display: flex;
+	padding: 0;
+}
+
+footer > section > ul > li > h2,
+footer > ul > li > h2 {
 	font-size: 22px;
 }
 
-footer > a {
+footer > section > ul > li > a,
+footer > ul > li > a {
+	line-height: 200%;
+	font-size: 18px;
 	color: var(--text-secondary);
 	text-decoration: none;
 }
 
-footer > img {
-	width: 120px;
+footer > section > ul > li > img {
+	width: 110px;
 	height: auto;
 }
 
-footer > div > img {
+footer > ul > ul > li > img {
 	width: 25px;
 	height: auto;
 	margin: 0 auto;
 }
 
-footer > div {
+footer > ul > ul > li {
 	display: flex;
 	background-color: var(--accent-color-2);
 	border-radius: 50px;
 	width: 50px;
 	height: 50px;
+	margin-right: 8px;
 }
 
-.ex-icon {
+figure {
 	display: flex;
 	width: 75px;
 	height: 75px;
@@ -224,14 +254,10 @@ footer > div {
 	margin: 25px 0 15px 0;
 }
 
-.ex-icon > img {
+figure > img {
 	margin: 0 auto;
 	width: 35px;
 	height: auto;
-}
-
-.col-to-row {
-	display: inline;
 }
 
 .rounded-corner {
@@ -244,7 +270,7 @@ footer > div {
 
 @media only screen and (min-width: 480px)
 {
-	section:nth-child(4) > section > article {
+	section:nth-child(4) > section > ul {
 		grid-template-columns: 220px 220px;
 	}
 }
@@ -256,7 +282,7 @@ footer > div {
 		height: auto;
 	}
 	
-	.col-to-row {
+	div {
 		display: flex;
 	}
 
@@ -287,13 +313,13 @@ footer > div {
 		row-gap: 20px;
 	}
 
-	section:nth-child(4) > section > article {
-		justify-content: right;
-	}
-	
 	section:nth-child(4) > section {
 		display: flex;
 		align-items: center;
+	}
+	
+	section:nth-child(4) > section > article {
+		justify-content: right;
 	}
 
 	div > section:nth-child(2) {
