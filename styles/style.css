@@ -96,7 +96,21 @@ button {
 	height: auto;
 }
 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+}
+
+header > ul {
+	padding: 0;
+	margin: 0;
+}
+
 header > ul > li {
+	display: flex;
+	margin-bottom: 8px;
 	list-style: none;
 	background-color: var(--accent-color);
 	border-radius: 30px;
@@ -105,8 +119,9 @@ header > ul > li {
 }
 
 header > ul > li > img {
-	width: 20px;
+	width: 16px;
 	height: auto;
+	margin: 0 auto;
 }
 
 #abt section {
@@ -178,6 +193,11 @@ div > section:nth-child(3) {
     background-size: contain;
 }
 
+#home section:nth-child(1) > p {
+	font-weight: 700;
+	font-size: 22px;
+}
+
 section:nth-child(1) > button {
 	outline: 1px solid var(--accent-color-2);
 	background-color: var(--accent-color);
@@ -207,11 +227,19 @@ section:nth-child(4) > section > ul > li > p {
 	color: var(--accent-color-2);
 }
 
-section:nth-child(5) > img {
+#home section:nth-child(5) > img {
 	display: flex;
 	margin: 0 auto;
 	width: 50%;
 	height: auto;
+}
+
+#abt section:nth-child(5) {
+	padding: 0;
+}
+
+#abt section:nth-child(5) > h2 {
+	padding-left: 2.1%; 
 }
 
 footer {
@@ -328,6 +356,14 @@ figure > img {
 		height: 100vh;
 	}
 
+	header > ul {
+		display: flex;
+	}
+
+	header > ul > li {
+		margin-left: 10px;
+	}
+	
 	.rounded-corner {
 		max-width: 35em;
 		height: auto;
