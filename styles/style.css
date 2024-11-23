@@ -216,7 +216,7 @@ section:nth-child(1) > button {
 	color: var(--accent-color-2);
 }
 
-section:nth-child(4) > section > ul {
+section:nth-child(4) > ul {
 	display: grid;
 	grid-template-columns: 160px 160px;
 	justify-content: center;
@@ -224,11 +224,15 @@ section:nth-child(4) > section > ul {
 	row-gap: 20px;
 }
 
-section:nth-child(4) > section > ul > li {
+section:nth-child(4) > section > img {
+	max-width: 600px;
+}
+
+section:nth-child(4) > ul > li {
 	border-top: 1px solid var(--text-secondary);
 }
 
-section:nth-child(4) > section > ul > li > p {
+section:nth-child(4) > ul > li > p {
 	padding: 10px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
@@ -244,7 +248,6 @@ section:nth-child(4) > section > ul > li > p {
 	object-fit: cover;
 	margin: 0 auto;
 	width: 50%;
-	background-color: var(--darker-blue);
 	height: auto;
 }
 
@@ -337,7 +340,7 @@ figure > img {
 
 @media only screen and (min-width: 480px)
 {
-	section:nth-child(4) > section > ul {
+	section:nth-child(4) > div > ul {
 		grid-template-columns: 220px 220px;
 	}
 }
@@ -385,21 +388,46 @@ figure > img {
 	.display-on-desktop {
 		display: inline;
 	}
-	
+
+	#home section:nth-child(5) > img {
+		background-color: var(--darker-blue);
+	}
+
+	main section:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
 	main section:nth-child(2) > ul {
 		display: grid;
-		grid-template-columns: 300px 300px;
+		grid-template-columns: 320px 320px;
 		column-gap: 15px;
 		row-gap: 20px;
 	}
 
-	section:nth-child(4) > section {
+	section:nth-child(2) > h2 {
+		font-size: 60px;
+		width: 50%;
+	}
+
+	section:nth-child(4) {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		gap: 10px;
 	}
-	
-	section:nth-child(4) > section > article {
-		justify-content: right;
+
+	section:nth-child(4) > ul > li > h4 {
+		font-size: 25px;
+	}
+
+	section:nth-child(4) > ul {
+		grid-template-columns: 220px 220px;
+	}
+
+	section:nth-child(4) > section > h2 {
+		font-size: 40px;
 	}
 
 	#home section:nth-child(5) {
