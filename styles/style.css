@@ -165,6 +165,10 @@ section:nth-child(2) > ul > li > h3 {
 	border-top: 1px solid var(--text-secondary);
 }
 
+.rounded-corner {
+	border-bottom-right-radius: 25px;
+}
+
 div > section {
 	color: var(--accent-color-2);
 	height: 250px;
@@ -348,7 +352,8 @@ figure > img {
 @media only screen and (min-width: 1024px) {
 	#logo-big {
 		display: inline;
-		width: 675px;
+		min-width: 500px;
+		max-width: 620px;
 		height: auto;
 	}
 
@@ -380,10 +385,6 @@ figure > img {
 	header > ul > li {
 		margin-left: 10px;
 	}
-	
-	.rounded-corner {
-		border-bottom-right-radius: 25px;
-	}
 
 	.display-on-desktop {
 		display: inline;
@@ -399,6 +400,11 @@ figure > img {
 		align-items: flex-end;
 	}
 
+	#abt section:nth-child(2) {
+		display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+	}
 	main section:nth-child(2) > ul {
 		display: grid;
 		grid-template-columns: 320px 320px;
@@ -452,6 +458,7 @@ figure > img {
 		line-height: 140px;
 	}
 
+	#abt section:nth-child(2) > article,
 	section:nth-child(6) > article {
 		display: flex;
 		align-content: space-between;
@@ -460,7 +467,8 @@ figure > img {
 		flex-wrap: wrap;
 	}
 
-	section:nth-child(6) > article > ul {
+	section:nth-child(6) > article > ul,
+	#abt section:nth-child(2) > article > ul {
 		width: 600px;
 		display: flex;
 		flex-direction: row;
@@ -468,13 +476,12 @@ figure > img {
 		align-content: flex-start;
 	}
 
-	section:nth-child(6) article > div {
-		display: flex;
-		flex-direction: column;
+	article > p:nth-of-type(1) {
 		width: 400px;
 	}
 
-	section:nth-child(6) > article > ul > li {
+	section:nth-child(6) > article > ul > li,
+	#abt section:nth-child(2) > article > ul > li {
 		width: 300px;
 	}
 
