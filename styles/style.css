@@ -371,11 +371,6 @@ figure > img {
 		border-bottom-right-radius: 25px;
 	}
 
-	section:nth-child(2) > h2 {
-		font-size: 50px;
-		width: 650px;
-	}
-
 	section:nth-child(2) > ul {
 		width: 400px;
 	}
