@@ -50,47 +50,101 @@
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  Web Content Accessibility Guidelines  (WCAG) checklist, test 1:
-  Content:
-  Use plain language and avoid figures of speech, idioms, and complicated metaphors.
-  Ja.
+  ### Web Content Accessibility Guidelines  (WCAG) checklist, test 1:
+  
+  #### Content:
+  Use plain language and avoid figures of speech, idioms, and complicated metaphors ✅ 
 
-  Make sure that button, a (links), and label (in forms) content is unique and descriptive. ❌
-  Nee:
+  Make sure that button, a (links), and label (in forms) content is unique and descriptive ❌
+  
   <img src="readme-images/wcag_check.png" width="500px">
 
-  Global code:
-  Use a lang attribute on the html element. ✅
+  #### Global code:
+  Use a lang attribute on the html element ✅
+  
   <img src="readme-images/wcag_check2.png" width="500px">
 
-  Provide a unique title for each page. ✅
+  Provide a unique title for each page ✅
+  
   <img src="readme-images/wcag_check3.png" width="500px">
 
-  Ensure that viewport zoom is not disabled. ✅
+  Ensure that viewport zoom is not disabled ✅
+  
   <img src="readme-images/wcag_check4.png" width="500px">
 
-  Keyboard:
-  Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input. ❌
+  #### Keyboard:
+  Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input ❌
 
-  Check to see that keyboard focus order matches the visual layout.
+  Check to see that keyboard focus order matches the visual layout ✅
 
-  Mobile and touch:
-  Check that the site can be rotated to any orientation. ✅
-  Remove horizontal scrolling. ✅
-  Ensure that button and link icons can be activated with ease (size and position). ✅
-  Ensure sufficient space between interactive items in order to provide a scroll area. ✅
+  #### Mobile and touch:
+  Check that the site can be rotated to any orientation ✅
+  
+  Remove horizontal scrolling ✅
+  
+  Ensure that button and link icons can be activated with ease (size and position) ✅
+  
+  Ensure sufficient space between interactive items in order to provide a scroll area ✅
 
-  Headings:
-  Use heading elements to introduce content. ✅
-  Ja.
+  #### Headings:
+  Use heading elements to introduce content ✅
 
-  Use only one h1 element per page or view. ✅
-  Ja
+  Use only one h1 element per page or view ✅
 
-  Heading elements should be written in a logical sequence/don't skip heading levels. ❌
-  Nee
+  Heading elements should be written in a logical sequence/don't skip heading levels ❌
   <img src="readme-images/wcag_check5.png" width="500px">
 
+  #### Lists:
+  Use list elements (ol, ul, and dl elements) for list content ✅
+
+  #### Images:
+  Make sure that all img elements have an alt attribute ✅
+
+  Make sure that decorative images use null alt (empty) attribute values ✅
+
+  Provide a text alternative for complex images such as charts, graphs, and maps ✅
+
+  For images containing text, make sure the alt description includes the image's text ✅
+  
+  #### Controls:
+  Use the a element for links ✅
+  
+  Ensure that links are recognizable as links ✅
+  
+  Ensure that controls have :focus states ✅
+  
+  Use the button element for buttons ✅
+  
+  Provide a skip link and make sure that it is visible when focused ✅
+  
+  Identify links that open in a new tab or window ✅
+
+  #### Appearance:
+  Check if dark and light mode are supported ❌
+
+  Check if high-contrast mode is supported ❌
+
+  Increase text size to 200% ✅
+
+  Make sure color isn't the only way information is conveyed ✅
+
+  #### Animation:
+  Ensure animations are subtle and do not flash too much ✅
+
+  Provide a mechanism to pause background video ✅ No bg video ;)
+
+  Make sure all animation obeys the prefers-reduced-motion media query ✅
+
+  #### Color contrast:
+  Check the contrast for all normal-sized text ✅
+
+  Check the contrast for all large-sized text ✅
+
+  Check the contrast for all icons ✅
+
+  Check text that overlaps images or video ✅
+
+  Check custom ::selection colors ✅
 </details>
 
 
@@ -122,8 +176,8 @@
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Tot nu toe gaat goed, alleen moet ik nog veel doen voor de desktop versie van de 
-  site omdat daar meer content/styling op staat dan op de small screen versie.
+  Tot nu toe gaat het goed, alleen moet ik nog veel doen voor de desktop versie van de 
+  site omdat daar meer content en styling op staat dan op de small screen versie.
 
 
   ### Verslag van meeting
