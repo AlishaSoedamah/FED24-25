@@ -571,7 +571,7 @@ figure > img {
 	}
 
 	article > p:nth-of-type(1),
-	section > p:nth-of-type(1) {
+	#abt section > p:nth-of-type(1) {
 		width: 450px;
 	}
 
