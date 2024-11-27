@@ -102,15 +102,21 @@ button {
 	cursor: pointer;
 }
 
-#abt section:nth-child(3) {
+#abt .quote {
 	position: relative;
+	align-items: flex-start;
+	width: 250px;
+	height: auto;
+	outline: none;
 }
 
-section:nth-child(3) > blockquote::before {
+blockquote {
+	margin: 0;
+}
+
+blockquote::before {
     content: "";
     position: absolute;
-	top: 0;
-    left: 0;
     background-image: url(../images/quote.svg);
     background-position: 50%;
     background-size: contain;
@@ -118,6 +124,8 @@ section:nth-child(3) > blockquote::before {
     opacity: .15;
     width: 4rem;
     height: 4rem;
+	top: -20px;
+	left: -20px;
 }
 
 #logo-big {
@@ -296,11 +304,11 @@ section:nth-child(4) > ul > li > p {
 	height: auto;
 }
 
-#abt section:nth-child(5) {
+#abt section:nth-last-child(1) {
 	padding: 0;
 }
 
-#abt section:nth-child(5) > h2 {
+#abt section:nth-last-child(1) > h2 {
 	padding-left: 2.1%; 
 }
 
@@ -374,6 +382,9 @@ footer > ul:nth-child(2)  > li {
 
 figure {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 75px;
 	height: 75px;
 	outline: 1px dashed var(--accent-color);
@@ -387,6 +398,14 @@ figure > img {
 	height: auto;
 }
 
+ol {
+	padding: 0;
+}
+
+ol > li {
+	list-style: none;
+}
+
 @media only screen and (min-width: 480px)
 {
 	section:nth-child(4) > div > ul {
@@ -397,6 +416,10 @@ figure > img {
 @media only screen and (min-width: 1024px) {
 	h1, h2 {
 		font-size: 50px;
+	}
+
+	h3 {
+		font-size: 28px;
 	}
 
 	#logo-big {
@@ -461,6 +484,7 @@ figure > img {
 	}
 
     #abt section:nth-child(2) {
+		border-top: none;
 		display: flex;
 		align-items: flex-start;
 		justify-content: flex-start;
@@ -470,6 +494,24 @@ figure > img {
 
 	#abt section:nth-child(2) > article {
 		width: 70%;
+	}
+
+	#abt .quote {
+		width: 400px;
+	}
+
+	blockquote::before {
+		content: "";
+		position: absolute;
+		background-image: url(../images/quote.svg);
+		background-position: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		opacity: .15;
+		width: 6.5rem;
+		height: 6.5rem;
+		top: -50px;
+		left: -50px;
 	}
 
 	#abt section:nth-child(3) {
@@ -513,7 +555,7 @@ figure > img {
 	section:nth-child(4) {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		gap: 10px;
 	}
 
@@ -550,6 +592,46 @@ figure > img {
 		font-size: 12vw;
 		margin: 0.3em 0;
 		line-height: 140px;
+	}
+
+	ol {
+		display: flex;
+		position: relative;
+		padding-top: 15em;
+	}
+
+	ol > li {
+		max-width: 400px;
+	}
+
+	ol > li:nth-child(even) {
+		border-top: 1px dashed var(--accent-color);
+	}
+
+	ol > li:nth-child(odd) {
+		border-bottom: 1px dashed var(--accent-color);
+        top: -2.5vw;
+        transform: translateY(-100%);
+    }
+
+	ol >li:nth-child(odd)::after
+	{
+		content: "";
+		position: absolute;
+		left: calc(100% + 1px);
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: #8aadb2;
+		border: 1px solid #000d10;
+	}
+
+	ol > li > p {
+		font-size: 16px;
+	}
+
+	#abt section:nth-child(2) > article {
+		width: 31%;
 	}
 
 	#abt section:nth-child(3) > article,
