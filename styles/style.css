@@ -312,13 +312,17 @@ footer > section > ul > li > img {
 	height: auto;
 }
 
-footer > ul > ul > li > img {
+footer > ul:nth-child(2) > li > img {
 	width: 25px;
 	height: auto;
 	margin: 0 auto;
 }
 
-footer > ul > ul > li {
+footer > ul:nth-child(2)  {
+	display: flex;
+}
+
+footer > ul:nth-child(2)  > li {
 	display: flex;
 	background-color: var(--accent-color-2);
 	border-radius: 50px;
