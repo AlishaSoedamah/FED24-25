@@ -645,11 +645,12 @@ ol > li {
 
 	section:nth-child(6) > article > ul,
 	#abt section:nth-child(3) > article > ul {
-		width: 600px;
+		width: 650px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-content: flex-start;
+		gap: 50px;
 	}
 
 	article > p:nth-of-type(1),
