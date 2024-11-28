@@ -21,7 +21,7 @@
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -200,26 +200,17 @@
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Er was niet echt feedback, de site is bijna af voor volgende week.
+  Ik wil de 3d website hero en tekst animaties in de site verwerken tijdens de laatste week.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Kijk naar [CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations)
+  - Fix de border van de time line met een image i.p.v een border
+  - Je kan misschien een mid-schreen media query maken (de echte site heeft alleen media-queries voor small screens en big screens).
+  - Er is al veel gedaan, goed op weg :)
 
 </details>
 
@@ -309,7 +300,7 @@
   Nb. Vermeld de bronnen ook in je code.
 
   1. [bron 1](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
-  2. bron 2
+  2. [bron 2](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations)
   3. ...
 
 </details>
