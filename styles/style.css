@@ -20,6 +20,7 @@
 	--brick-red: #bc7155;
 	--text-secondary: #8e8e95;
 	--background-about: #8aadb2;
+	--btn-hover: #393939;
 }
 
 .visually_hidden {
@@ -111,6 +112,11 @@ button {
 	border-radius: 25px;
 	padding: 12px 15px;
 	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	background-color: var(--btn-hover);
 }
 
 #abt .quote {
@@ -137,6 +143,24 @@ blockquote::before {
     height: 4rem;
 	top: -20px;
 	left: -20px;
+}
+
+#hero-plane {
+	margin: 3em 0 3em 0;
+	margin-left: 0;
+	animation: movingplane linear;
+	animation-timeline: view();
+}
+
+@keyframes movingplane {
+	0% {
+		translate: -200vw 0vw;
+		scale: 1%;
+	}
+	100% {
+		translate: 100vw 0vw;
+		scale: 200%;
+	}
 }
 
 #logo-big {
@@ -268,6 +292,10 @@ div > section:nth-child(3) {
 	background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+div > section:nth-child(3) > h2 {
+	font-size: 30px;
 }
 
 #home section:nth-child(1) > p {
@@ -612,7 +640,7 @@ ol > li {
 	}
 
 	ol > li {
-		max-width: 400px;
+		width: 500px;
 	}
 
 	ol > li:nth-child(even) {
@@ -624,18 +652,6 @@ ol > li {
         top: -2.5vw;
         transform: translateY(-100%);
     }
-
-	ol >li:nth-child(odd)::after
-	{
-		content: "";
-		position: absolute;
-		left: calc(100% + 1px);
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: #8aadb2;
-		border: 1px solid #000d10;
-	}
 
 	ol > li > p {
 		font-size: 16px;
@@ -661,7 +677,7 @@ ol > li {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-content: flex-start;
-		gap: 50px;
+		column-gap: 50px;
 	}
 
 	article > p:nth-of-type(1),
@@ -689,10 +705,29 @@ ol > li {
 	}
 
 	footer > section {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 0;
-		margin-bottom: 60px;
+		display: grid;
+		grid-template-columns: 170px 170px 170px;
+		justify-content: end;
+		column-gap: 75px;
+	}
+
+	#hero-plane {
+		margin-top: 3em;
+		margin-left: 0;
+		height: 7em;
+		width: 20em;
+		animation: movingplane linear;
+		animation-timeline: view();
+	}
+	
+	@keyframes movingplane {
+		0% {
+			translate: -30vw 0vw;
+			scale: 50%;
+		}
+		100% {
+			translate: 100vw 0vw;
+			scale: 300%;
+		}
 	}
 }
