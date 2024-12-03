@@ -12,6 +12,39 @@
   box-sizing: border-box;
 }
 
+.closeIcon {
+	display: none;
+}
+
+.hamburger {
+	z-index: 100;
+	top: 1rem;
+	right: 1rem;
+	padding: 4px;
+	cursor: pointer;
+}
+
+.menu {
+	position: fixed;
+	transform: translateX(100%);
+	transition: transform 0.2s;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: var(--accent-color-2);
+	color: var(--accent-color);
+	list-style: none;
+	padding-top: 4rem;
+}
+
+.showMenu {
+	display: flex;
+	flex-direction: column;
+	transform: translateX(15%);
+}
+
 :root {
 	--accent-color: #000d10;
 	--accent-color-2: #ffffff;
@@ -189,7 +222,7 @@ ul {
 	margin: 0;
 }
 
-header > ul > li {
+.menu-btn {
 	display: flex;
 	margin-bottom: 8px;
 	background-color: var(--accent-color);
@@ -203,6 +236,10 @@ header > ul > li > img {
 	height: auto;
 	margin: 0 auto;
 }
+
+/* .menu {
+	
+} */
 
 a {
 	color: var(--accent-color);
@@ -690,7 +727,7 @@ ol > li {
 		width: 100vw;
 	}
 
-	section:nth-child(7) > h2{
+	section:nth-child(7) > h2 {
 		display: flex;
 		justify-content: center;
 		font-size: 9vw;
@@ -698,6 +735,14 @@ ol > li {
 
 	section:nth-child(7) > h2:hover {
 		text-decoration: underline;
+	}
+
+	section:nth-child(7) > span {
+		display: flex;
+		justify-content: center;
+		color: var(--text-secondary);
+		font-weight: 800;
+		font-size: 35px;
 	}
 
 	footer > section {
