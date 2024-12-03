@@ -12,39 +12,6 @@
   box-sizing: border-box;
 }
 
-.closeIcon {
-	display: none;
-}
-
-.hamburger {
-	z-index: 100;
-	top: 1rem;
-	right: 1rem;
-	padding: 4px;
-	cursor: pointer;
-}
-
-.menu {
-	position: fixed;
-	transform: translateX(100%);
-	transition: transform 0.2s;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 99;
-	background: var(--accent-color-2);
-	color: var(--accent-color);
-	list-style: none;
-	padding-top: 4rem;
-}
-
-.showMenu {
-	display: flex;
-	flex-direction: column;
-	transform: translateX(15%);
-}
-
 :root {
 	--accent-color: #000d10;
 	--accent-color-2: #ffffff;
@@ -92,8 +59,7 @@ ul > li {
 	list-style: none;
 }
 
-nav > ul:nth-child(1), 
-nav > ul:nth-child(2) {
+nav > ul:nth-child(1) {
 	display: none;
 }
 
@@ -151,6 +117,50 @@ button {
 
 button:hover {
 	background-color: var(--btn-hover);
+}
+
+.closeIcon {
+	display: none;
+}
+
+.hamburger {
+	z-index: 100;
+	top: 1rem;
+	right: 1rem;
+	padding: 4px;
+}
+
+.menu {
+	position: fixed;
+	transform: translateX(100%);
+	transition: transform 0.2s;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: var(--accent-color-2);
+	color: var(--accent-color);
+	list-style: none;
+	padding-top: 4rem;
+}
+
+.showMenu {
+	transform: translateX(0);
+	padding: 10px;
+}
+
+.menu-btn {
+	display: flex;
+	margin-bottom: 8px;
+	background-color: var(--accent-color);
+	border-radius: 30px;
+	width: 50px;
+	height: 50px;
+}
+
+.menu-btn:hover {
+	cursor: pointer;
 }
 
 #abt .quote {
@@ -222,24 +232,11 @@ ul {
 	margin: 0;
 }
 
-.menu-btn {
-	display: flex;
-	margin-bottom: 8px;
-	background-color: var(--accent-color);
-	border-radius: 30px;
-	width: 50px;
-	height: 50px;
-}
-
 header > ul > li > img {
 	width: 16px;
 	height: auto;
 	margin: 0 auto;
 }
-
-/* .menu {
-	
-} */
 
 a {
 	color: var(--accent-color);
@@ -510,6 +507,14 @@ ol > li {
 		display: none;
 	}
 
+	.showMenu {
+		display: flex;
+		gap: 50px;
+		/* flex-direction: column;
+		flex-wrap: wrap; */
+		transform: translateX(15%);
+	}
+
 	nav > ul:nth-child(1) {
 		display: flex;
 	}
@@ -609,13 +614,11 @@ ol > li {
 		width: 33.33%;
 	}
 
-	#abt section:nth-last-child(1)
-	{
+	#abt section:nth-last-child(1) {
 		display: flex;
 	}
 
-	#abt section:nth-last-child(1) > img
-	{
+	#abt section:nth-last-child(1) > img {
 		width: 40%;
 	}
 	
