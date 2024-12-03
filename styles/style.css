@@ -33,7 +33,7 @@
   width: 1px;
 }
 
-.hidden {
+section {
 	opacity: 0;
 	transform: translateY(10vh);
 	transition: opacity 0.6s ease, transform 0.6s ease;
@@ -43,6 +43,7 @@
 	opacity: 1;
 	transform: translateY(0);
 }
+  
 
 body {
 	font-family: "Helvetica-reg", arial;
@@ -154,11 +155,11 @@ blockquote::before {
 
 @keyframes movingplane {
 	0% {
-		translate: -200vw 0vw;
+		transform: translate(-200vw, 0vw);
 		scale: 1%;
 	}
 	100% {
-		translate: 100vw 0vw;
+		transform: translate(100vw, 0vw);
 		scale: 200%;
 	}
 }
@@ -553,7 +554,7 @@ ol > li {
 		left: -50px;
 	}
 
-	#abt section:nth-child(3) {
+	#abt main section:nth-child(3) {
 		display: flex;
         flex-direction: row;
 		justify-content: space-between;
@@ -643,12 +644,7 @@ ol > li {
 		width: 500px;
 	}
 
-	ol > li:nth-child(even) {
-		border-top: 1px dashed var(--accent-color);
-	}
-
 	ol > li:nth-child(odd) {
-		border-bottom: 1px dashed var(--accent-color);
         top: -2.5vw;
         transform: translateY(-100%);
     }
@@ -694,7 +690,7 @@ ol > li {
 		width: 100vw;
 	}
 
-	section:nth-child(7) > h2 {
+	section:nth-child(7) > h2{
 		display: flex;
 		justify-content: center;
 		font-size: 9vw;
@@ -712,21 +708,17 @@ ol > li {
 	}
 
 	#hero-plane {
-		margin-top: 3em;
-		margin-left: 0;
 		height: 7em;
 		width: 20em;
-		animation: movingplane linear;
-		animation-timeline: view();
 	}
-	
+
 	@keyframes movingplane {
 		0% {
-			translate: -30vw 0vw;
+			transform: translate(-5vw, 0vw);
 			scale: 50%;
 		}
 		100% {
-			translate: 100vw 0vw;
+			transform: translate(50vw, 0vw);
 			scale: 300%;
 		}
 	}

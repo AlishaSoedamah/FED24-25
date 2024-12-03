@@ -302,5 +302,8 @@
   1. [bron 1](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
   2. [bron 2](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations)
   3. [bron 3](https://codepen.io/TheSupermazter/pen/ogvNvwJ)
+  4. [bron 4] (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/view)
+  5. [bron 5] (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline)
+  6. [bron 6] (https://github.com/TheSupermazter/flyingPlane)
 
 </details>
