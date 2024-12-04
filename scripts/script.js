@@ -1,23 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-	const targets = document.querySelectorAll("section");
-  
-	const observer = new IntersectionObserver(
-	  (entries, observer) => {
-		entries.forEach((entry) => {
-		  if (entry.isIntersecting) {
-			entry.target.classList.add("visible");
-			observer.unobserve(entry.target);
-		  }
-		});
-	  },
-	  {
-		threshold: 0.1
-	  }
-	);
-	targets.forEach((target) => observer.observe(target));
-  });
-  
-
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -43,3 +23,23 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+document.addEventListener("DOMContentLoaded", () => {
+	const targets = document.querySelectorAll("section");
+  
+	const observer = new IntersectionObserver(
+	  (entries, observer) => {
+		entries.forEach((entry) => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add("visible");
+			observer.unobserve(entry.target);
+		  }
+		});
+	  },
+	  {
+		threshold: 0.1
+	  }
+	);
+	targets.forEach((target) => observer.observe(target));
+  });
+  
