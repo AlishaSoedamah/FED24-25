@@ -246,7 +246,12 @@
 
   - Gebruik deze voor de sliders https://codepen.io/shooft/pen/zYKEyrN
   - Fix misschien nog dit vlak
-  - Fix de close button van het burger menu
+  <img src="readme-images/vlak_week4.png" width="375px" alt="burger menu">
+  - Fix de close button van het burger menu 
+  - Fix de login buttons op desktop in het burger menu
+  <img src="readme-images/menu_week4.png" width="375px" alt="burger menu">
+  <img src="readme-images/timeline_week4.png" width="375px" alt="timeline">
+  <img src="readme-images/quote_week4.png" width="375px" alt="timeline">
 
 </details>
 
