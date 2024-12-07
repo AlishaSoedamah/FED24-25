@@ -230,6 +230,7 @@
   -   Make sure that button, a (links), and label (in forms) content is unique and descriptive
   -   Heading elements should be written in a logical sequence/don't skip heading levels
   -   Check if dark and light mode are supported
+  -   Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input 
 
   #### Mijn site:
 
@@ -254,7 +255,7 @@
   Ensure that viewport zoom is not disabled ✅
 
   #### Keyboard:
-  Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input ❌
+  Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input ✅
 
   Check to see that keyboard focus order matches the visual layout ✅
 
