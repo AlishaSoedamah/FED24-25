@@ -381,19 +381,27 @@
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/final-site.png" width="600px" alt="Screenshot van mijn gemaakte website">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  De website responsive maken
+  De styling van de layouts maken van de website. Je kan veel doen met de nth-child selector. CSS/JS animaties zijn makkelijk om te maken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/top.png" width="375px" alt="top">
 
 
-  ### Dit was lastig/Is niet gelukt:
-  De foto slider/quote slider in de website zetten, voor de rest ging alles wel lekker
+  ### Niet gelukt:
+  - De foto slider/quote slider in de website zetten
 
-  <img src="readme-images/" width="375px" alt="bummer">
+  <img src="readme-images/fail.png" width="375px" alt="Foto slider werkt niet">
+
+  - Hero 1-op-1 namaken
+
+  <img src="readme-images/hero.png" width="375px" alt="website hero">
+
+  - Somige styling voor de darkmode website werkt niet goed
+  Dit is door tijdsnood niet gelukt. Voor de rest ging alles wel lekker.
+
 </details>
 
 
@@ -416,5 +424,6 @@
   5. [bron 5](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline)
   6. [bron 6](https://github.com/TheSupermazter/flyingPlane)
   7. [bron 7](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
+  8. [bron 8](https://www.youtube.com/watch?v=_gKEUYarehE&ab_channel=Coding2GO)
 
 </details>
