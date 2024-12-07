@@ -220,18 +220,31 @@
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  #### Verbeterd:
+  -   Make sure that button, a (links), and label (in forms) content is unique and descriptive
+  -   Heading elements should be written in a logical sequence/don't skip heading levels
+  -   Check if dark and light mode are supported
+
+  #### Mijn site:
+
+  <img src="readme-images/mine.png" width="500px">
+
+  #### Hyers site:
+
+  <img src="readme-images/hyer.png" width="500px">
 
   ### Web Content Accessibility Guidelines  (WCAG) checklist, test 2 (eigen site):
   
   #### Content:
   Use plain language and avoid figures of speech, idioms, and complicated metaphors ✅ 
 
-  Make sure that button, a (links), and label (in forms) content is unique and descriptive ❌
+  Make sure that button, a (links), and label (in forms) content is unique and descriptive ✅
 
   #### Global code:
   Use a lang attribute on the html element ✅
@@ -259,7 +272,7 @@
 
   Use only one h1 element per page or view ✅
 
-  Heading elements should be written in a logical sequence/don't skip heading levels ❌
+  Heading elements should be written in a logical sequence/don't skip heading levels ✅
 
   #### Lists:
   Use list elements (ol, ul, and dl elements) for list content ✅
@@ -287,7 +300,7 @@
   Identify links that open in a new tab or window ✅
 
   #### Appearance:
-  Check if dark and light mode are supported ❌
+  Check if dark and light mode are supported ✅
 
   Check if high-contrast mode is supported ❌
 

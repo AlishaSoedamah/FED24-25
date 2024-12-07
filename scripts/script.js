@@ -4,6 +4,8 @@ const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
+const themeSwitch = document.getElementById('theme-switch');
+let darkmode = localStorage.getItem('darkmode');
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -44,3 +46,26 @@ document.addEventListener("DOMContentLoaded", () => {
 	);
 	targets.forEach((target) => observer.observe(target));
 });
+
+//bron: https://www.youtube.com/watch?v=_gKEUYarehE&ab_channel=Coding2GO
+const enableDarkmode = () => {
+	document.body.classList.add('darkmode');
+	localStorage.setItem('darkmode', 'active');
+}
+
+const disableDarkmode = () => {
+	document.body.classList.remove('darkmode');
+	localStorage.setItem('darkmode', null);
+}
+
+if (darkmode === "active") enableDarkmode();
+
+themeSwitch.addEventListener("click", () => {
+	darkmode = localStorage.getItem('darkmode');
+	if (darkmode != "active") {
+		enableDarkmode();
+	}
+	else {
+		disableDarkmode();
+	}
+})
