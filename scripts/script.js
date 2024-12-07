@@ -1,3 +1,4 @@
+// bron: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -24,6 +25,7 @@ menuItems.forEach(
   }
 )
 
+//bron TheSupermazter: https://codepen.io/TheSupermazter/pen/ogvNvwJ
 document.addEventListener("DOMContentLoaded", () => {
 	const targets = document.querySelectorAll("section");
   

@@ -21,6 +21,7 @@
 	--text-secondary: #8e8e95;
 	--background-about: #8aadb2;
 	--btn-hover: #393939;
+	--sky-blue: rgb(131 157 187);
 }
 
 .visually_hidden {
@@ -145,6 +146,10 @@ button:hover {
 	padding-top: 4rem;
 }
 
+.hamburger {
+	z-index: 100;
+}
+
 .showMenu {
 	transform: translateX(0);
 	padding: 10px;
@@ -224,7 +229,11 @@ blockquote::before {
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;	
+	align-items: flex-start;
+}
+
+#home header {
+	background: linear-gradient(var(--sky-blue), var(--accent-color-2));
 }
 
 ul {
@@ -508,12 +517,16 @@ ol > li {
 	}
 
 	.showMenu {
+		padding: 50px;
+		transform: translateX(35%);
+	}
+
+	.menu-links {
 		display: flex;
 		gap: 50px;
-		/* flex-direction: column;
-		flex-wrap: wrap; */
-		transform: translateX(15%);
+		font-size: 20px;
 	}
+
 
 	nav > ul:nth-child(1) {
 		display: flex;
@@ -660,7 +673,6 @@ ol > li {
 
 	#home section:nth-child(5) > div > h2 {
 		font-size: 50px;
-		padding-bottom: 10em;
 	}
 	
 	#home section:nth-child(5) > div {
@@ -673,6 +685,10 @@ ol > li {
 		font-size: 12vw;
 		margin: 0.3em 0;
 		line-height: 140px;
+	}
+
+	.special-txt {
+		width: 450px;
 	}
 
 	ol {
@@ -715,11 +731,6 @@ ol > li {
 		flex-wrap: wrap;
 		align-content: flex-start;
 		column-gap: 50px;
-	}
-
-	article > p:nth-of-type(1),
-	#abt section > p:nth-of-type(1) {
-		width: 450px;
 	}
 
 	section:nth-child(6) > article > ul > li,

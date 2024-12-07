@@ -238,7 +238,15 @@
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Er moet nog wat stying komen voor het burger menu en de quote section. 
+  Er moet nog wat stying komen voor het burger menu en de quote section. Je moet nog bedenken wat
+  er beter kan op de website. 
+  
+  Ik heb de volgende punten genoteerd:
+  - Het menu zit er twee keer in, haal er één uit. Je hebt een main nav die naar about, solutions en contact gaat, ik ga deze uit de site halen aangezien je ook op deze pagina's kan komen via het burger menu i.p.v dat het dubbel is.
+  - Ik wil deze section aanpassen zodat de tekst wel bij elkaar zit
+  <img src="readme-images/vlak_week4.png" width="375px" alt="Raar vlak">
+  - De tekst op dit vlak ook bij elkaar i.p.v uit elkaar
+  <img src="readme-images/vlak2_week4.png" width="375px" alt="Ander raar vlak">
 
 
   ### Verslag van meeting
@@ -246,7 +254,7 @@
 
   - Gebruik deze voor de sliders https://codepen.io/shooft/pen/zYKEyrN
   - Fix misschien nog dit vlak
-  <img src="readme-images/vlak_week4.png" width="375px" alt="burger menu">
+  <img src="readme-images/vlak_week4.png" width="375px" alt="raar vlak">
   - Fix de close button van het burger menu 
   - Fix de login buttons op desktop in het burger menu
   <img src="readme-images/menu_week4.png" width="375px" alt="burger menu">
