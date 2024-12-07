@@ -226,11 +226,94 @@
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  ### Web Content Accessibility Guidelines  (WCAG) checklist, test 2 (eigen site):
+  
+  #### Content:
+  Use plain language and avoid figures of speech, idioms, and complicated metaphors ✅ 
+
+  Make sure that button, a (links), and label (in forms) content is unique and descriptive ❌
+
+  #### Global code:
+  Use a lang attribute on the html element ✅
+
+  Provide a unique title for each page ✅
+
+  Ensure that viewport zoom is not disabled ✅
+
+  #### Keyboard:
+  Make sure there is a visible focus style for interactive elements that are navigated (tab and shift + tab) to via keyboard input ❌
+
+  Check to see that keyboard focus order matches the visual layout ✅
+
+  #### Mobile and touch:
+  Check that the site can be rotated to any orientation ✅
+  
+  Remove horizontal scrolling ✅
+  
+  Ensure that button and link icons can be activated with ease (size and position) ✅
+  
+  Ensure sufficient space between interactive items in order to provide a scroll area ✅
+
+  #### Headings:
+  Use heading elements to introduce content ✅
+
+  Use only one h1 element per page or view ✅
+
+  Heading elements should be written in a logical sequence/don't skip heading levels ❌
+
+  #### Lists:
+  Use list elements (ol, ul, and dl elements) for list content ✅
+
+  #### Images:
+  Make sure that all img elements have an alt attribute ✅
+
+  Make sure that decorative images use null alt (empty) attribute values ✅
+
+  Provide a text alternative for complex images such as charts, graphs, and maps ✅
+
+  For images containing text, make sure the alt description includes the image's text ✅
+  
+  #### Controls:
+  Use the a element for links ✅
+  
+  Ensure that links are recognizable as links ✅
+  
+  Ensure that controls have :focus states ✅
+  
+  Use the button element for buttons ✅
+  
+  Provide a skip link and make sure that it is visible when focused ✅
+  
+  Identify links that open in a new tab or window ✅
+
+  #### Appearance:
+  Check if dark and light mode are supported ❌
+
+  Check if high-contrast mode is supported ❌
+
+  Increase text size to 200% ✅
+
+  Make sure color isn't the only way information is conveyed ✅
+
+  #### Animation:
+  Ensure animations are subtle and do not flash too much ✅
+
+  Provide a mechanism to pause background video ✅ No bg video ;)
+
+  Make sure all animation obeys the prefers-reduced-motion media query ✅
+
+  #### Color contrast:
+  Check the contrast for all normal-sized text ✅
+
+  Check the contrast for all large-sized text ✅
+
+  Check the contrast for all icons ✅
+
+  Check text that overlaps images or video ✅
+
+  Check custom ::selection colors ✅
+
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -242,24 +325,35 @@
   er beter kan op de website. 
   
   Ik heb de volgende punten genoteerd:
-  - Het menu zit er twee keer in, haal er één uit. Je hebt een main nav die naar about, solutions en contact gaat, ik ga deze uit de site halen aangezien je ook op deze pagina's kan komen via het burger menu i.p.v dat het dubbel is.
-  - Ik wil deze section aanpassen zodat de tekst wel bij elkaar zit
-  <img src="readme-images/vlak_week4.png" width="375px" alt="Raar vlak">
-  - De tekst op dit vlak ook bij elkaar i.p.v uit elkaar
-  <img src="readme-images/vlak2_week4.png" width="375px" alt="Ander raar vlak">
+  - Het menu zit er twee keer in, haal er één uit. Je hebt een main nav die naar about, solutions en contact gaan, ik ga deze uit de site halen aangezien je ook op deze pagina's kan komen via het burger menu i.p.v dat het dubbel is.
 
+  <img src="readme-images/vlak_week4.png" width="500px" alt="Raar vlak">
+  
+  - Ik wil deze section aanpassen zodat de tekst wel bij elkaar zit
+  
+  <img src="readme-images/vlak2_week4.png" width="375px" alt="Ander raar vlak">
+  
+  - De tekst op dit vlak ook bij elkaar i.p.v uit elkaar
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Gebruik deze voor de sliders https://codepen.io/shooft/pen/zYKEyrN
   - Fix misschien nog dit vlak
+    
   <img src="readme-images/vlak_week4.png" width="375px" alt="raar vlak">
+  
   - Fix de close button van het burger menu 
   - Fix de login buttons op desktop in het burger menu
+    
   <img src="readme-images/menu_week4.png" width="375px" alt="burger menu">
+
+   - Zet hier een lijn in
+  
   <img src="readme-images/timeline_week4.png" width="375px" alt="timeline">
-  <img src="readme-images/quote_week4.png" width="375px" alt="timeline">
+
+   - Maak de quote section ook een slider
+  <img src="readme-images/quote_week4.png" width="375px" alt="quote section">
 
 </details>
 
@@ -273,19 +367,19 @@
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  De website responsive maken
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De foto slider/quote slider in de website zetten, voor de rest ging alles wel lekker
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/" width="375px" alt="bummer">
 </details>
 
 
@@ -307,5 +401,6 @@
   4. [bron 4](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/view)
   5. [bron 5](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline)
   6. [bron 6](https://github.com/TheSupermazter/flyingPlane)
+  7. [bron 7](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 
 </details>
