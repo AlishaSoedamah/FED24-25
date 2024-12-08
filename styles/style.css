@@ -17,6 +17,7 @@
 	--accent-color-btn: #000d10;
 	--footer-color: #000d10;
 	--accent-color-2: #ffffff;
+	--light-text-lightmode: #ffffff;
 	--dark-blue: #151623;
 	--darker-blue: #0f0f1c;
 	--brick-red: #bc7155;
@@ -32,6 +33,7 @@
 	--dark-blue: #e7e9ff;
 	--darker-blue: #000052;
 	--brick-red: #bc7155;
+	--background-about: #1f2728;
 	--text-secondary: #ededed;
 	--btn-hover: #ffffff;
 }
@@ -230,6 +232,7 @@ header > ul {
 }
 
 blockquote {
+	color: var(--accent-color);
 	margin: 0;
 }
 
@@ -464,7 +467,7 @@ section:nth-child(4) > ul > li > p {
 
 footer {
 	background-color: var(--footer-color);
-	color: var(--accent-color-2);
+	color: var(--light-text-lightmode);
 	padding: 35px 17px;
 }
 
@@ -497,7 +500,7 @@ footer > ul:nth-child(1) > ul {
 footer > section > ul > li > h2,
 footer > ul > li > h2 {
 	font-size: 22px;
-	color: var(--accent-color-2);
+	color: var(--light-text-lightmode);
 }
 
 footer > section > ul > li > a,
@@ -524,7 +527,7 @@ footer > ul:nth-child(2)  {
 
 footer > ul:nth-child(2)  > li {
 	display: flex;
-	background-color: var(--accent-color-2);
+	background-color: var(--light-text-lightmode);
 	border-radius: 50px;
 	width: 50px;
 	height: 50px;
