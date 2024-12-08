@@ -339,7 +339,7 @@
   er beter kan op de website. 
   
   Ik heb de volgende punten genoteerd:
-  - Het menu zit er twee keer in, haal er één uit. Je hebt een main nav die naar about, solutions en contact gaan, ik ga deze uit de site halen aangezien je ook op deze pagina's kan komen via het burger menu i.p.v dat het dubbel is.
+  - Het menu zit er twee keer in, haal er één uit. Je hebt een main nav die naar about, solutions en contact gaat, ik ga deze uit de site halen aangezien je ook op deze pagina's kan komen via het burger menu i.p.v dat het dubbel staat.
 
   <img src="readme-images/vlak_week4.png" width="500px" alt="Raar vlak">
   
